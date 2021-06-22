@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floatingActionBaby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/babyBossSaco"
+        android:layout_width="155dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/babyPhotoDescription"
+        android:onClick="onBabyBoss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/babybosssaco" />
+
+    <TextView
+        android:id="@+id/textViewBaby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/babyReady"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/babyBossSaco" />
+
+    <Button
+        android:id="@+id/buttonNextActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onNext"
+        android:text="@string/programNextActivity"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onFun"
+        android:text="@string/funWithBaby"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSettings"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBaby" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
