@@ -26,6 +26,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     ViewHolder viewHolder1;
     RecyclerView recyclerView;
     //TextView textView;
+    //x
 
     public MyAdapter(Context context1, ArrayList<Event> SubjectValues1){
 
